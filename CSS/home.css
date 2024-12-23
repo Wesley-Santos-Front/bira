@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 320px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        text-align: center;
+        position: relative;
+        height: 100px;
+        width: 110px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 120px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 160px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 18px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+       display: table;
+       margin: 0px auto;
+     }
+    .img1 img {
+        width: 260px;
+        height: 206px;
+    }
+    .title1 {
+       display: block;
+       margin: 40px auto 0 auto;
+       text-align: center;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 25px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 20px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media screen and (min-width: 380px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        text-align: center;
+        position: relative;
+        height: 100px;
+        width: 150px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 160px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 180px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 18px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+       display: table;
+       margin: 0px auto;
+     }
+    .img1 img {
+        width: 360px;
+        height: 206px;
+    }
+    .title1 {
+       display: block;
+       margin: 40px auto 0 auto;
+       text-align: center;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 25px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 20px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media screen and (min-width: 500px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        text-align: center;
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 210px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 25px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+       display: table;
+       margin: 0px auto;
+     }
+    .img1 img {
+        width: 470px;
+        height: 336px;
+    }
+    .title1 {
+       display: block;
+       margin: 50px auto 0 auto;
+       text-align: center;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 40px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 35px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media screen and (min-width: 720px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+       display: table;
+       margin: 0px auto;
+     }
+    .img1 img {
+        width: 470px;
+        height: 336px;
+    }
+    .title1 {
+       display: block;
+       margin: 50px auto 0 auto;
+       text-align: center;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 40px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 35px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media screen and (min-width: 960px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+        margin-top: 50px;
+        float: right;
+     }
+    .img1 img {
+        width: 460px;
+        height: 466px;
+    }
+    .title1 {
+        display: inline-block;
+        margin-top: 180px;
+        margin-left:40px;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 40px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 35px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media  screen and (min-width: 1140px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+        margin-top: 50px;
+        float: right;
+     }
+    .img1 img {
+        width: 510px;
+        height: 466px;
+    }
+    .title1 {
+        display: inline-block;
+        margin-top: 170px;
+        margin-left:40px;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 50px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 45px;
+        font-family: "Lilita One", serif;
+    }
+    
+}
+@media screen and (min-width: 1320px) {
+
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    .img1 {
+        margin-top: 50px;
+        float: right;
+     }
+    .img1 img {
+        width: 600px;
+        height: 466px;
+    }
+    .title1 {
+        display: inline-block;
+        margin-top: 150px;
+        margin-left:130px;
+    }
+    .title1 h1 {
+        font-family: "Ga Maamli", serif;
+        font-size: 50px;
+        text-align: center;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title1 p {
+        padding: 20px 0;
+        color: rgba(0, 0, 138, 0.75);
+        text-align: center;
+        font-size: 45px;
+        font-family: "Lilita One", serif;
+    }
+}
+

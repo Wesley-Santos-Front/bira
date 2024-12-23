@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 47, 202, 0.85);
+    border: 1px solid white;
+}
+@media screen and (min-width:320px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .escopo1 { 
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 100px;
+        width: 110px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 120px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 160px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 18px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 14px;
+        transition: all 0.2s ease-in;
+    }
+    .info{
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        padding: 10px;
+        height: table;
+    }
+    .endereco{
+        margin: 30px auto;
+        display: block;
+        width: 100%;
+        height: table;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 15px 10px 10px rgba(0, 58, 247, 0.35);
+        padding: 7px;
+    }
+    .title-ende ion-icon{
+        float: left;
+    }
+    .title-ende h3{
+        font-size: 15px;
+        padding: 7px;
+        text-align: justify;
+
+    }
+    .para {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .para li{
+        display: block;
+        width: 100%;
+        height: table;
+        text-align: justify;
+        background-color: white;
+        font-family:'Times New Roman', Times, serif;
+        padding: 7px;
+        font-weight: 500;
+    
+        
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70px;
+        height: 30px;
+        margin: 15px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    }
+    .hiperl a:first-child {
+        margin-top: 5px;
+    }
+    
+}
+@media screen and (min-width: 380px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .escopo1 { 
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 100px;
+        width: 140px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 150px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 180px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 22px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 27px;
+        transition: all 0.2s ease-in;
+    }
+    .info{
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        padding: 10px;
+        height: table;
+    }
+    .endereco{
+        margin: 30px auto;
+        display: block;
+        width: 100%;
+        height: table;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 15px 10px 10px rgba(0, 58, 247, 0.35);
+        padding: 7px;
+    }
+    .title-ende ion-icon{
+        float: left;
+    }
+    .title-ende h3{
+        font-size: 15px;
+        padding: 7px;
+        text-align: justify;
+
+    }
+    .para {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .para li{
+        display: block;
+        width: 100%;
+        height: table;
+        text-align: justify;
+        background-color: white;
+        font-family:'Times New Roman', Times, serif;
+        padding: 7px;
+        font-weight: 500;
+    
+        
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70px;
+        height: 30px;
+        margin: 15px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    }
+    .hiperl a:first-child {
+        margin-top: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 500px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .escopo1 { 
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 210px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+    
+    }
+    
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 25px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    }
+    .info{
+        display: block;
+        margin: 50px auto;
+        width:300px;
+        height: table;
+    }
+    .endereco{
+        margin: 30px auto;
+        display: block;
+        width: 300px;
+        height: table;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 15px 10px 10px rgba(0, 58, 247, 0.35);
+        padding: 7px;
+    }
+    .title-ende ion-icon{
+        float: left;
+    }
+    .title-ende h3{
+        font-size: 18px;
+        padding: 7px;
+    }
+    .para {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .para li{
+        display: block;
+        width: 250px;
+        height: table;
+        text-align: justify;
+        background-color: white;
+        font-size: 15px;
+        font-family:'Times New Roman', Times, serif;
+        padding: 7px;
+        font-weight: 500;
+    
+        
+    }
+    .para li:first-child {
+        margin-top: 5px;
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+    
+}
+@media screen and (min-width: 720px) {
+    
+.container{
+    display: block;
+}
+.tela1 {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    
+}
+.escopo1 { 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+}
+.img-logo{
+    display: table;
+}
+.img-logo img{
+    position: relative;
+    height: 130px;
+    width: 180px;
+    float: left;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+}
+.img-logo img:hover {
+    height: 140px;
+    width: 190px;
+    transition: all 0.3s ease-in
+
+}
+.hiperlinks {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all 0.2s ease-in;
+    margin-right: 40px;
+
+}
+.hiperlinks a {
+    margin: auto 0;
+    font-family: "Ga Maamli", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+}
+ion-icon{
+    padding: 0 8px 0 0;
+    position: relative;
+    font-size: 28px;
+    float: left;
+
+}
+.hiperlinks a:hover {
+    border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+    font-size: 22px;
+    transition: all 0.2s ease-in;
+}
+.info{
+    display: block;
+    margin: 50px auto;
+    width:300px;
+    height: table;
+}
+.endereco{
+    margin: 30px auto;
+    display: block;
+    width: 300px;
+    height: table;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px rgba(0, 58, 247, 0.35);
+    padding: 7px;
+}
+.title-ende ion-icon{
+    float: left;
+}
+.title-ende h3{
+    padding: 7px;
+}
+.para {
+    display: block;
+    margin-bottom: 30px;
+}
+.para li{
+    display: block;
+    width: 250px;
+    height: table;
+    text-align: justify;
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+    padding: 7px;
+    font-weight: 500;
+
+    
+}
+.foos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+    
+
+}
+.hiperl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80px;
+    height: 30px;
+    margin: 25px auto;
+}
+.hiperl a {
+    margin: auto 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    float: left;
+
+
+}
+}

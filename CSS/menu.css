@@ -1,0 +1,2916 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 47, 202, 0.85);
+    border: 1px solid white;
+}
+@media screen and (min-width: 320px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 13px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 100px;
+        width: 110px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 120px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 160px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 18px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 14px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 280px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        font-size: 13px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        text-align: center;
+        margin: 10px auto;
+        width: 320px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 12px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 320px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+        font-size: 16px;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 320px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 320px;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        font-size: 13px;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 11px;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 76px;
+        height: 90px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
+@media screen and (min-width: 380px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 13px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 100px;
+        width: 140px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 110px;
+        width: 150px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 180px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 22px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        font-size: 15px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 380px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 14px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 380px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 380px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 380px;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        font-size: 13px;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 11px;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 85px;
+        height: 90px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+
+}
+@media screen and (min-width: 500px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 210px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 25px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 470px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 16px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 470px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+        font-size: 20px;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 470px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 470px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        font-size: 15px;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 150px;
+        height: 130px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
+@media screen and (min-width: 720px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 700px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 22px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 570px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+        font-size: 25px;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 570px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 570px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        font-size: 19px;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 200px;
+        height: 130px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
+@media screen and (min-width: 960px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 940px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 22px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 570px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 570px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 570px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 200px;
+        height: 130px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
+@media screen and (min-width: 1140px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 1100px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 22px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 570px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+    }
+    .list1{
+        display: block;
+        margin: 5px auto;
+        width: 570px;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 570px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 200px;
+        height: 130px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
+@media  screen and (min-width: 1220px) {
+    .container{
+        display: block;
+    }
+    .tela1 {
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    /*modal*/
+    .modal { 
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1300;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .tot-p {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .tot-p p {
+        margin-top: 15px;
+        text-align:start;
+        font-weight: bold;
+    
+    }
+    .ender {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ender input:first-child {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        width: 230px;
+        border-radius: 10px;
+        height: 26px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ender input {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        margin-top: 5px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        height: 26px;
+        text-align: center;
+    
+    }
+    .bairr input{
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 120px;
+        border-radius: 10px;
+        height: 26px;
+    
+    }
+    .erro-en {
+        margin-top: 10;
+        color: red;
+        visibility: hidden;
+    }
+    .botton1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bot button {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .bot button:first-child{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .container-block {
+        display: block;
+    }
+    .container-block p:first-child {
+        font-weight: bold;
+        margin-top: 10px;
+    
+    }
+    .button-pedido {
+        display: block;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px auto;
+        z-index: 1100;
+    }
+    .button-pedido button {
+        border-radius: 10px;
+        background-color: rgba(0, 214, 11, 0.95);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        transition: all 0.3s ease-out;
+        
+    }
+    .button-pedido button:hover {
+        background-color: rgba(0, 214, 11, 0.90);
+        transition: all 0.3s ease-out;
+        font-weight: bold;
+    }
+    .escopo1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 110px;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+    }
+    .img-logo{
+        display: table;
+    }
+    .img-logo img{
+        position: relative;
+        height: 130px;
+        width: 180px;
+        float: left;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    
+    }
+    .img-logo img:hover {
+        height: 140px;
+        width: 190px;
+        transition: all 0.3s ease-in
+    
+    }
+    .hiperlinks {
+        width: 300px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.2s ease-in;
+        margin-right: 40px;
+    
+    }
+    .hiperlinks a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    
+    }
+    ion-icon{
+        padding: 0 8px 0 0;
+        position: relative;
+        font-size: 28px;
+        float: left;
+    
+    }
+    .hiperlinks a:hover {
+        border-bottom: 3px solid rgba(0, 0, 138, 0.65);
+        font-size: 22px;
+        transition: all 0.2s ease-in;
+    
+    }
+    
+    /*modal*/
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .carri {
+        padding: 20px;
+       display: table;
+        top: 0;
+        left: 0;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .carri h2 {
+        font-weight: 1000;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .botton1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px auto 0 auto;
+    }
+    .botton1 button{
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid rgba(0, 255, 0);
+        border-radius: 10px;
+        background-color: rgba(0, 255, 0);
+    
+    }
+    .botton1 button:hover {
+        background-color: rgba(0, 255, 0, 0.75);
+        border: 1px solid rgba(0, 255, 0);
+    
+    }
+    .botton1 button:first-child{
+        padding: 10px;
+        font-weight: bold;
+        color:#fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 5, 5);
+        border-radius: 10px;
+        background-color: rgba(255, 5, 5);
+    
+    }
+    .botton1 button:first-child:hover{
+        border: 1px solid rgba(255, 5, 5);
+        background-color: rgba(255, 5, 5, 0.75);
+    
+    }
+    
+    /* lista de menu*/
+    .hora {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 10px;
+        border:none;
+        border-radius: 15px;
+        background-color: rgba(28, 187, 7, 0.65);
+        color: white;
+        font-weight: bold;
+    }
+    .menu-escopo {
+        margin: 10px auto;
+        width: 1200px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-escopo a {
+        margin: auto 0;
+        font-family: "Ga Maamli", serif;
+        text-decoration: none;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 22px;
+        
+    }
+    .menu-escopo a:hover {
+        color: rgba(0, 0, 138, 0.65);
+        
+    }
+    .lista {
+        display: block;
+        width: 1205px;
+        height: table;
+        margin: 0 auto;
+    }
+    .title h2 {
+        margin-top: 10px;
+        display: inline-block;
+        font-family: "Ga Maamli", serif;
+    }
+    .list1{
+        margin: 5px auto;
+        width: 1205px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .list-row {
+        margin-top: 20px;
+        width: 570px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .list-row:hover {
+        background-image: none;
+        background-color: rgba(112, 112, 112,0.55);
+        transition: all 0.3s ease-out;
+        color: rgba(0, 0, 138, 0.65);
+    
+    }
+    .title-list1 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .title-list1 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 h3:last-child {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    .title-list1 p {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+    .img-list img{
+        position: relative;
+        z-index: 0;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 200px;
+        height: 130px;
+    
+    }
+    .foos {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        box-shadow: 10px 5px 5px 10px rgba(112, 112, 112,0.65);
+        
+    
+    }
+    .hiperl{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80px;
+        height: 30px;
+        margin: 25px auto;
+    }
+    .hiperl a {
+        margin: auto 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        float: left;
+    
+    
+    }
+    
+}
