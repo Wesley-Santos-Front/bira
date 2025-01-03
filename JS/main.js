@@ -17,6 +17,10 @@ const val = document.getElementById("item-valor");
 const quantCarr = document.getElementById("quantCarrinho");
 const titleEntr = document.getElementById("title-entrega");
 const nome = document.getElementById("nome1");
+const checkbox = document.getElementById("check");
+const teleen = document.getElementById("tele1");
+
+
 
 let cart = [];
 
@@ -33,7 +37,16 @@ let cart = [];
           const price = parseFloat(captura.getAttribute("data-price"))
   
           addToCard(name, price)
-          alert(name + " adicionado ao carrinho!")
+          
+          Toastify({
+            text: name + " adicionado ao carrinho!",
+            duration: 2500,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            style: {
+              background: "rgba(28, 187, 7, 0.95)",
+            },
+          }).showToast();
            
       
       }
@@ -132,10 +145,25 @@ function removeItemCa(name1){
 }
 
 //Função para pegar o input
+checkbox.addEventListener("click", function(){
+    if (checkbox.checked){
+        Toastify({
+            text: "Será adicionado R$ 9,00 com a tele",
+            duration: 2600,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            style: {
+              background: "rgba(28, 187, 7, 0.95)",
+            },
+          }).showToast();
+
+    teleen.style.display="block";
+    updateCardModal();
 nome.addEventListener("input", function(event3){
     let inputValue = event3.target.value;
     if(!inputValue !== ""){
     erro.style.visibility="hidden"
+    updateCardModal();
     }
 })
 
@@ -159,22 +187,37 @@ bairro.addEventListener("input", function(event2){
     if(inputValue !== ""){
     erro.style.visibility="hidden";
 }
+});} else {
+    rua.value = "";
+    numero.value = "";
+    bairro.value = "";
+    teleen.style.display="none";
+    updateCardModal();
+}
 });
-
 
 //Finalizar pedido
 finalizar.addEventListener("click", function(){
+    if(checkbox.checked){
+    if(rua.value === "" || numero.value === "" || bairro.value === "") {
+        erro.style.visibility="visible";
+        return;
+    }
+} else {
+    if(nome.value === "") {
+        erro.style.visibility="visible";
+        return;
+}
+}
 
     const isOpen = checkRestauranteOn();
 
     if(!isOpen){
         Toastify({
             text: "Ops o restaurante está fechado",
-            duration: 3000,
-            close: true,
+            duration: 2300,
             gravity: "top", // `top` or `bottom`
             position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
               background: "#ef4444",
             },
@@ -184,10 +227,6 @@ finalizar.addEventListener("click", function(){
 
     if(cart.length === 0) return;
 
-    if(nome.value === "" || rua.value === "" || numero.value === "" || bairro.value === "") {
-        erro.style.visibility="visible";
-        return;
-    }
 
     //Enviar pedido para o Whatsapp
     const cardItem = cart.map((item) => {
@@ -204,8 +243,7 @@ finalizar.addEventListener("click", function(){
     cart=[];
     updateCardModal()
 
-
-})
+});
 
 //verificar hora
 function checkRestauranteOn(){

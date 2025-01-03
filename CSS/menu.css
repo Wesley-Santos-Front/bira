@@ -50,14 +50,31 @@
         font-weight: bold;
     }
     .tot-p {
+        font-size: 12px;
         margin-top: 15px;
         font-weight: bold;
     }
     .tot-p p {
+        font-size: 12px;
         margin-top: 15px;
         text-align:start;
         font-weight: bold;
     
+    }
+    .tele {
+        display: flex;
+        margin-top: 10px;
+
+    }
+    .tele input {
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .tele p {
+        font-size: 12x;
+    }
+    .tele1 {
+        display: none;
     }
     .ender {
         margin-top: 5px;
@@ -68,6 +85,7 @@
         justify-content: space-between;
     }
     .ender input:first-child {
+        font-size: 12px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         width: 230px;
@@ -77,6 +95,7 @@
         text-align: justify;
     }
     .ender input {
+        font-size: 12px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         padding: 10px;
@@ -87,6 +106,7 @@
     
     }
     .bairr input{
+        font-size: 12px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         text-align: justify;
         margin-top: 5px;
@@ -97,6 +117,7 @@
     
     }
     .erro-en {
+        font-size: 12px;
         margin-top: 10;
         color: red;
         visibility: hidden;
@@ -109,6 +130,7 @@
         width: 100%;
     }
     .bot button {
+        font-size: 12px;
         background-color: green;
         color: #fff;
         text-align: center;
@@ -142,6 +164,12 @@
         font-weight: bold;
         margin-top: 10px;
     
+    }
+    .remove-btn {
+        font-size: 12px;
+    }
+    .container-block p {
+        font-size: 12px;
     }
     .button-pedido {
         display: block;
@@ -253,7 +281,7 @@
     }
     .carri h2 {
         font-weight: 1000;
-        font-size: 22px;
+        font-size: 17px;
         text-align: center;
         font-weight: bold;
     }
@@ -370,6 +398,7 @@
     
     }
     .title-list1 {
+        width: 190px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -467,10 +496,12 @@
         font-weight: bold;
     }
     .tot-p {
+        font-size: 15px;
         margin-top: 15px;
         font-weight: bold;
     }
     .tot-p p {
+        font-size: 15px;
         margin-top: 15px;
         text-align:start;
         font-weight: bold;
@@ -485,6 +516,7 @@
         justify-content: space-between;
     }
     .ender input:first-child {
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         width: 230px;
@@ -494,6 +526,7 @@
         text-align: justify;
     }
     .ender input {
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         padding: 10px;
@@ -504,6 +537,7 @@
     
     }
     .bairr input{
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         text-align: justify;
         margin-top: 5px;
@@ -514,6 +548,7 @@
     
     }
     .erro-en {
+        font-size: 13px;
         margin-top: 10;
         color: red;
         visibility: hidden;
@@ -526,6 +561,7 @@
         width: 100%;
     }
     .bot button {
+        font-size: 13px;
         background-color: green;
         color: #fff;
         text-align: center;
@@ -536,6 +572,7 @@
         cursor: pointer;
     }
     .bot button:first-child{
+        font-size: 13px;
         background-color: red;
         color: #fff;
         text-align: center;
@@ -559,6 +596,9 @@
         font-weight: bold;
         margin-top: 10px;
     
+    }
+    .container-block p {
+        font-size: 15px;
     }
     .button-pedido {
         display: block;
@@ -1199,6 +1239,7 @@
     
     }
     .title-list1 {
+        width: 250px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -2855,6 +2896,7 @@
     
     }
     .title-list1 {
+        width: 250px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
