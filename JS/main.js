@@ -107,6 +107,7 @@ function updateCardModal(){
     })
     Total.textContent=total.toFixed(2);
 
+
 }
 
 
@@ -193,6 +194,7 @@ bairro.addEventListener("input", function(event2){
     bairro.value = "";
     teleen.style.display="none";
     updateCardModal();
+    updateCardModal();
 }
 });
 
@@ -231,16 +233,35 @@ finalizar.addEventListener("click", function(){
     //Enviar pedido para o Whatsapp
     const cardItem = cart.map((item) => {
         return (
-            `${item.name}, Quantidade: ${item.quantity} | `
+            `
+*- ${item.name}*, Quantidade: ${item.quantity};`
         )
 
     }).join("");
 
+    const endeR = cart.map((item) => {
+        return (
+`                                                                                  `
+        ) }).join("");
+
     const message = encodeURIComponent(cardItem);
+    const ende = encodeURIComponent(endeR);
     const fone = "5198968933"
 
-    window.open(`https://wa.me/${fone}?text=Boa noite, me chamo ${nome.value}, Queria Pedir: ${message} Endereço: ${rua.value}, Nº: ${numero.value}, Bairro: ${bairro.value}`, "_blank");
+    if (checkbox.checked){
+        window.open(`https://wa.me/${fone}?text=Boa noite, me chamo ${nome.value}, Queria Pedir: ${message} ${ende} Endereço: ${rua.value}, Nº: ${numero.value}, Bairro: ${bairro.value}.`);
+    }else{
+        window.open(`https://wa.me/${fone}?text=Boa noite, me chamo ${nome.value}, Queria Pedir: ${message}`);
+    }
+
+   
     cart=[];
+    checkbox.checked = false;
+    nome.value = null;
+    rua.value = null;
+    numero.value = null;
+    bairro.value = null;
+    teleen.style.display="none";
     updateCardModal()
 
 });
@@ -249,7 +270,7 @@ finalizar.addEventListener("click", function(){
 function checkRestauranteOn(){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 23; //restaurante aberto
+    return hora >= 18 && hora < 23,59; //restaurante aberto
 }
 
 const itemSpan = document.getElementById("data-span");
@@ -260,5 +281,6 @@ if(open){
 }else{
     itemSpan.style.backgroundColor= "rgba(231, 1, 1, 0.65)";
 }
+
 
 
