@@ -136,7 +136,7 @@
     }
     .erro-en {
         font-size: 13px;
-        margin-top: 10;
+        margin-top: 5px;
         color: red;
         visibility: hidden;
     }
