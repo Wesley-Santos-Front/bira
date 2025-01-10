@@ -103,7 +103,7 @@ function updateCardModal(){
          </div> 
 
          <div>
-         <button class="remove-btn" data-name="${item.name}" style="cursor:pointer; margin-top:25px; padding:5px; border-radius:10px;border: 1px solid black;">
+         <button class="remove-btn" data-name="${item.name}" style="cursor:pointer; margin-top:25px; padding:5px; border-radius:5px;border: 1px solid black; font-size:13px;">
          remover
          </button>
          </div>
