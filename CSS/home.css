@@ -75,13 +75,17 @@
         transition: all 0.2s ease-in;
     
     }
+    .center1 {
+        display: block;
+        margin: 130px auto;
+    }
     .img1 {
        display: table;
        margin: 0px auto;
      }
     .img1 img {
         width: 260px;
-        height: 206px;
+        height: 236px;
     }
     .title1 {
        display: block;
@@ -90,7 +94,7 @@
     }
     .title1 h1 {
         font-family: "Ga Maamli", serif;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         color: rgba(0, 0, 138, 0.65);
     
@@ -99,7 +103,7 @@
         padding: 20px 0;
         color: rgba(0, 0, 138, 0.75);
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         font-family: "Lilita One", serif;
     }
     
@@ -182,7 +186,7 @@
      }
     .img1 img {
         width: 360px;
-        height: 206px;
+        height: 236px;
     }
     .title1 {
        display: block;
@@ -191,7 +195,7 @@
     }
     .title1 h1 {
         font-family: "Ga Maamli", serif;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         color: rgba(0, 0, 138, 0.65);
     
@@ -200,12 +204,12 @@
         padding: 20px 0;
         color: rgba(0, 0, 138, 0.75);
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         font-family: "Lilita One", serif;
     }
     
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 490px) {
     .container{
         display: block;
     }
@@ -276,6 +280,10 @@
         font-size: 22px;
         transition: all 0.2s ease-in;
     
+    }
+    .center1 {
+        display: block;
+        margin: auto auto;
     }
     .img1 {
        display: table;
