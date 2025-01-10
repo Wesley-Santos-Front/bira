@@ -323,7 +323,7 @@ function checkRestauranteOn(){
     const hora = data.getHours();
     const dia = data.getDay();
     console.log(data.getDay());
-    return dia != 1 && hora >= 18 && hora < 23,59; //restaurante aberto
+    return dia != 1 && hora >= 18 && hora < 23; //restaurante aberto
     
 }
 
