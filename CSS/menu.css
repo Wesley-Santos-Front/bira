@@ -85,7 +85,7 @@
         justify-content: space-between;
     }
     .ender input:first-child {
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         width: 230px;
@@ -95,7 +95,7 @@
         text-align: justify;
     }
     .ender input {
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         margin-top: 5px;
         padding: 10px;
@@ -114,7 +114,7 @@
         justify-content: space-between;
     }
     .bairr input:last-child {
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         text-align: justify;
         margin-top: 5px;
@@ -124,7 +124,7 @@
         height: 26px;
     }
     .bairr input:first-child{
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         text-align: justify;
         margin-top: 5px;
@@ -135,7 +135,7 @@
     
     }
     .erro-en {
-        font-size: 12px;
+        font-size: 13px;
         margin-top: 10;
         color: red;
         visibility: hidden;
@@ -401,7 +401,7 @@
         font-family: "Ga Maamli", serif;
         text-decoration: none;
         color: rgba(121, 121, 121, 0.75);
-        font-size: 9px;
+        font-size: 9.8px;
         
     }
     .menu-escopo a:hover {
