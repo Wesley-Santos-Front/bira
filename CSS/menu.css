@@ -134,10 +134,12 @@
         height: 26px;
     
     }
+    .erro1 {
+        margin-top: 7px;
+    }
     .erro-en {
         text-align: center;
         font-size: 13px;
-        margin-top: 10px;
         color: red;
         visibility: hidden;
     }
