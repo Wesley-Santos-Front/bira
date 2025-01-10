@@ -135,6 +135,7 @@
     
     }
     .erro-en {
+        text-align: center;
         font-size: 13px;
         margin-top: 5px;
         color: red;
