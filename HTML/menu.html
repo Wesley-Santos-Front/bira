@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <section class="tela1">
-             <!--Modal-->
+             <!--Modal 1-->
              <div class="modal" id="card-modal3">
                 <div class="carri">
                     <h2>Meu carrinho</h2>
@@ -26,6 +26,22 @@
                     <div class="ender">
                         <input type="text" placeholder="Digite seu nome:" id="nome1">
                     </div>
+                <p id="erro-en" class="erro-en">Verifique se há algum campo vazio!!!</p>
+                <div class="botton1">
+                    <div class="bot">
+                    <button id="fech">fechar</button>
+                    <button id="finaliz">proximo</button>
+                    </div>
+                </div>
+                </div>
+             </div>
+              <!--Modal 2-->
+              <div class="modal2" id="card-modal4">
+                <div class="carri">
+                    <h2>Meu carrinho</h2>
+                    <div class="are">
+                    <textarea cols="33" rows="4" id="observacao" placeholder="Observação, exemplo: sem cebola..."></textarea> 
+                </div>
                     <div class="tele">
                         <p>Tele-Entrega:</p>
                         <input type="checkbox" id="check"/>
@@ -38,20 +54,36 @@
                     </div>
                 <div class="bairr">
                     <input type="text" placeholder="Bairro" id="adress2">
+                    <input type="text" placeholder="Complemento..." id="compl">
                 </div>
                     </div>
-                <p id="erro-en" class="erro-en">Verifique se há algum campo vazio!!!</p>
+                    <div class="pag">
+                        <p>Forma de Pagamento:</p>
+                        <select id="sele">
+                            <option value="Pix">Pix</option>
+                            <option value="Cartão">Cartão</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+                    <div class="pag">
+                        <p>Maionese:</p>
+                        <select id="maio">
+                            <option value="Branca">Branca</option>
+                            <option value="Verde">Verde</option>
+                        </select>
+                    </div>
+                <p id="erro-en2" class="erro-en">Verifique se há algum campo vazio!!!</p>
                 <div class="botton1">
                     <div class="bot">
-                    <button id="fech">fechar</button>
-                    <button id="finaliz">finalizar pedido</button>
+                    <button id="voltare" >voltar</button>
+                    <button id="finaliza">finalizar pedido</button>
                     </div>
                 </div>
                 </div>
              </div>
 
-             <div class="button-pedido" >
-                <button onclick="modaliza()"><span id="quantCarrinho">(0)</span> Itens no carrinho</button>
+             <div class="button-pedido" id="modaliza" >
+                <button><span id="quantCarrinho">(0)</span> Itens no carrinho </ion-icon></button>
             </div>
             <header class="escopo1">
 

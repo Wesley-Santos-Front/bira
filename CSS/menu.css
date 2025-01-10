@@ -105,7 +105,25 @@
         text-align: center;
     
     }
-    .bairr input{
+    .bairr {
+        margin-top: 5px;
+        width: 310px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .bairr input:last-child {
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        text-align: justify;
+        margin-top: 5px;
+        padding: 10px;
+        width: 160px;
+        border-radius: 10px;
+        height: 26px;
+    }
+    .bairr input:first-child{
         font-size: 12px;
         border: 1px solid rgba(0, 0, 0, 0.35);
         text-align: justify;
@@ -321,6 +339,37 @@
         border: 1px solid rgba(255, 5, 5);
         background-color: rgba(255, 5, 5, 0.75);
     
+    }
+
+    /*modal 2*/
+    .modal2 {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1200;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .are {
+        display: block;
+        margin: 5px auto;
+
+    }
+    .are textarea {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        border-radius: 5px;
+    }
+    .pag {
+        display: flex;
+        margin-top: 10px;
+    }
+    .pag select {
+        cursor: pointer;
+        margin-top: -2px;
+        padding: 2px;
+        margin-left: 7px;
+        border-radius: 5px;
     }
     
     /* lista de menu*/
