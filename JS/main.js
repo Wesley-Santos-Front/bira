@@ -270,13 +270,19 @@ final.addEventListener("click", function(){
     
     
         //Enviar pedido para o Whatsapp
+        const mensagem = cart.map((item) => {
+            return (
+    `Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`
+            ) }).join("");
         const cardItem = cart.map((item) => {
             return (
                 `
-*- ${item.name}*, quantidade: ${item.quantity};`
+- ${item.name}
+    ${item.quantity} unidade(s)`
             )
     
         }).join("");
+
     
         const endeR = cart.map((item) => {
             return (
@@ -289,15 +295,24 @@ final.addEventListener("click", function(){
                 )
         
             }).join("");
+
+            const endeR2 = cart.map((item) => {
+                return ( `
+`)
+        
+            }).join("");
     
         const message = encodeURIComponent(cardItem);
+        const messa = encodeURIComponent(mensagem);
         const ende = encodeURIComponent(endeR);
+        const endeR1c= encodeURIComponent(endeR1);
+        const endeR2c = encodeURIComponent(endeR2);
         const fone = "5198968933"
     
         if (checkbox.checked){
-            window.open(`https://wa.me/${fone}?text=Boa noite, me chamo ${nome.value}, queria pedir: ${message} ${ende}*Endereço:* ${rua.value}, Nº: ${numero.value}, Bairro: ${bairro.value}, Complemento: ${complement.value};  ${endeR1}*Observação:* ${obs.value};${endeR1}*Maionese:* ${maionese.value}; ${endeR1}*Forma de Pagamento:* ${pag.value}; ${endeR1}*Total:* R$ ${Total.textContent}.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }else{
-            window.open(`https://wa.me/${fone}?text=Boa noite, me chamo ${nome.value}, queria pedir: ${message} ${ende} *Observação:* ${obs.value}; ${endeR1}*Maionese:* ${maionese.value}; ${endeR1}*Forma de Pagamento:* ${pag.value}; ${endeR1}*Total: R$ ${Total.textContent}.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }
     
        
