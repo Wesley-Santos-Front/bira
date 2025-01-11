@@ -160,7 +160,7 @@
         width: 100%;
     }
     .bot button {
-        font-size: 12px;
+        font-size: 14px;
         background-color: green;
         color: #fff;
         text-align: center;
@@ -637,7 +637,7 @@
         width: 100%;
     }
     .bot button {
-        font-size: 13px;
+        font-size: 14px;
         background-color: green;
         color: #fff;
         text-align: center;
@@ -648,7 +648,7 @@
         cursor: pointer;
     }
     .bot button:first-child{
-        font-size: 13px;
+        font-size: 14px;
         background-color: red;
         color: #fff;
         text-align: center;
