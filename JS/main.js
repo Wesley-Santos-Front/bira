@@ -179,7 +179,7 @@ checkbox.addEventListener("click", function(){
 nome.addEventListener("input", function(event3){
     let inputValue = event3.target.value;
     if(!inputValue !== ""){
-    erro.style.visibility="hidden"
+    erro.style.display="none";
     updateCardModal();
     }
 })
@@ -188,28 +188,28 @@ rua.addEventListener("input", function(event){
     let inputValue = event.target.value;
 
     if(inputValue !== "") {
-    erro2.style.visibility="hidden";
+    erro2.style.display="none";
 }
 });
   numero.addEventListener("input", function(event1){
     let inputValue = event1.target.value;
 
     if(inputValue !== ""){
-    erro2.style.visibility="hidden";
+    erro2.style.display="none";
  }
 });
 bairro.addEventListener("input", function(event2){
     let inputValue = event2.target.value;
 
     if(inputValue !== ""){
-    erro2.style.visibility="hidden";
+    erro2.style.display="none";
 }
 });
 complement.addEventListener("input", function(event3){
     let inputValue = event3.target.value;
 
     if(inputValue !== ""){
-        erro2.style.visibility="hidden";
+        erro2.style.display="none";
     }
 })} else {
     teleE = 0;
@@ -226,7 +226,7 @@ complement.addEventListener("input", function(event3){
 // Avançar pedido
 proximo.addEventListener("click", function(){
     if(nome.value === "") {
-        erro.style.visibility="visible";
+        erro.style.display="block";
         return;
     } 
 
@@ -260,7 +260,7 @@ volt.addEventListener("click", function(){
 final.addEventListener("click", function(){
     if(checkbox.checked){
         if(rua.value === "" || numero.value === "" || bairro.value === "" || complement.value ==="") {
-            erro2.style.visibility="visible";
+            erro2.style.display="block";
             return;
         }
     } else {
@@ -323,7 +323,7 @@ function checkRestauranteOn(){
     const hora = data.getHours();
     const dia = data.getDay();
     console.log(data.getDay());
-    return dia != 1 && hora >= 18 && hora < 23; //restaurante aberto
+    return dia != 1 && hora >= 18 && hora < 23,59; //restaurante aberto
     
 }
 
