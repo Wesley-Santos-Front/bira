@@ -59,7 +59,7 @@
         font-family: "Ga Maamli", serif;
         text-decoration: none;
         color: white;
-        font-size: 13px;
+        font-size: 15px;
     
     }
     ion-icon{
@@ -164,13 +164,13 @@
         font-family: "Ga Maamli", serif;
         text-decoration: none;
         color: white;
-        font-size: 14px;
+        font-size: 16px;
     
     }
     ion-icon{
         padding: 0 8px 0 0;
         position: relative;
-        font-size: 18px;
+        font-size: 22px;
         float: left;
     
     }
