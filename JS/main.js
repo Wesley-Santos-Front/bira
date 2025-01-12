@@ -47,6 +47,7 @@ let Queij = 0;
 let onio = 0;
 let ovo = 0;
 
+
 /*acionar o modal sim ou não*/
  
 
@@ -146,6 +147,27 @@ butModaliza.addEventListener("click", function(){
 
 fecha.addEventListener("click", function(){
          modal3.style.display="none"
+         checkbox.checked = false;
+         adicio.checked = false;
+         teleen.style.display="none";
+         adicioFle.style.display="none";
+         obs.value = "";
+         rua.value = "";
+         numero.value = "";
+         bairro.value = "";
+         complement.value = "";
+         chee.checked = false;
+         cebol.checked = false;
+         quei.checked = false;
+         oni.checked = false;
+         ov.checked = false;
+         Cheeda = 0;
+         cebola = 0;
+         Queij = 0;
+         onio = 0;
+         ovo = 0;
+         teleE = 0;
+         updateCardModal()
 
 })
 
@@ -348,28 +370,48 @@ final.addEventListener("click", function(){
     } else {
     
     }
-    
-    
+    var adic = "";
+        //if para adicionais
+        if(adicio.checked){
+            adic = "";
+            if(chee.checked){
+                adic += "Cheedar  ";
+            }else{
+                adic += "";
+            }
+            if(cebol.checked){
+                adic += "Cebola  ";
+            }else {
+                adic += "";
+            }
+            if(quei.checked){
+                adic += "Queijo Mussarela  ";
+            }else{
+                adic += "";
+            }
+            if(oni.checked){
+                adic += "Onion  ";
+            }else {
+                adic += "";
+            }
+            if(ov.checked){
+                adic += "Ovo  ";
+            }else{
+                adic += "";
+            }
+        }else{
+
+        }
     
         //Enviar pedido para o Whatsapp
-        const mensagem = cart.map((item) => {
-            return (
-    `Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`
-            ) }).join("");
         const cardItem = cart.map((item) => {
             return (
                 `
-- ${item.name}
+- ${item.name} R$ ${item.price.toFixed(2)}
     ${item.quantity} unidade(s)`
             )
     
         }).join("");
-
-    
-        const endeR = cart.map((item) => {
-            return (
-    `                                                                                                                                                                                                                                                            `
-            ) }).join("");
            
             const endeR1 = cart.map((item) => {
                 return (
@@ -385,16 +427,14 @@ final.addEventListener("click", function(){
             }).join("");
     
         const message = encodeURIComponent(cardItem);
-        const messa = encodeURIComponent(mensagem);
-        const ende = encodeURIComponent(endeR);
         const endeR1c= encodeURIComponent(endeR1);
         const endeR2c = encodeURIComponent(endeR2);
         const fone = "5198968933"
     
         if (checkbox.checked){
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }else{
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }
     
        
