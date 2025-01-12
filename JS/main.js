@@ -4,6 +4,7 @@ const modal3 = document.getElementById("card-modal3");
 const modal4 = document.getElementById("card-modal4");
 const itens = document.getElementById("card-itens");
 const Total = document.getElementById("card-total");
+const Total2 = document.getElementById("card-total2");
 const fecha = document.getElementById("fech");
 const proximo = document.getElementById("finaliz");
 const volt = document.getElementById("voltare");
@@ -130,6 +131,7 @@ function updateCardModal(){
     })
     quantCarr.innerHTML ="(" +  cart.length + ")";
     Total.textContent=total1.toFixed(2);
+    Total2.textContent=total1.toFixed(2);
 
 
 }
