@@ -376,6 +376,26 @@
         border: 1px solid rgba(0, 0, 0, 0.35);
         border-radius: 5px;
     }
+    .adicio {
+        margin-top: 5px;
+        width: 310px;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .flex-adi{
+        display: flex;
+        margin-top: 3px;
+    }
+    .flex-adi input {
+        cursor: pointer;
+    }
+    .flex-adi p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
     .pag {
         display: flex;
         margin-top: 17px;
@@ -393,7 +413,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 250px;
+        width: 280px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -831,7 +851,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 260px;
+        width: 290px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -1254,7 +1274,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 300px;
+        width: 330px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -1669,7 +1689,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 300px;
+        width: 330px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -2082,7 +2102,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 300px;
+        width: 330px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -2492,7 +2512,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 300px;
+        width: 330px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;
@@ -2902,7 +2922,7 @@
     /* lista de menu*/
     .hora {
         display: block;
-        width: 300px;
+        width: 330px;
         text-align: center;
         margin: 5px auto;
         padding: 10px;

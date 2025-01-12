@@ -28,11 +28,23 @@ const obs = document.getElementById("observacao");
 const complement = document.getElementById("compl");
 const pag = document.getElementById("sele");
 const maionese = document.getElementById("maio");
+const adicio = document.getElementById("check1");
+const adicioFle =document.getElementById("adicio-flex");
+const chee = document.getElementById("cheed");
+const cebol = document.getElementById("ceb");
+const quei = document.getElementById("quei");
+const oni = document.getElementById("oni");
+const ov = document.getElementById("ov");
 
 
 
 let cart = [];
 let teleE = 0;
+let Cheeda = 0;
+let cebola = 0;
+let Queij = 0;
+let onio = 0;
+let ovo = 0;
 
 /*acionar o modal sim ou não*/
  
@@ -111,7 +123,7 @@ function updateCardModal(){
         </div>
         `
         total += item.price * item.quantity;
-        total1 = total + teleE;
+        total1 = total + teleE + Cheeda + cebola + Queij + onio + ovo;
         nomePedidor.appendChild(createDiv);
        
 
@@ -249,6 +261,74 @@ proximo.addEventListener("click", function(){
      modal3.style.display="none";
         modal4.style.display="block"
 
+        // adicionais
+        adicio.addEventListener("click", function(){
+            if (adicio.checked){
+                adicioFle.style.display="flex";
+chee.addEventListener("click", function(){
+                if (chee.checked){
+                    Cheeda = 5;
+                    updateCardModal();
+                   }else{
+                    Cheeda = 0;
+                    updateCardModal();
+                   }
+               })
+cebol.addEventListener("click", function(){
+                if(cebol.checked){
+                    cebola = 7;
+                    updateCardModal();
+                }else{
+                    cebola = 0;
+                    updateCardModal();
+                }
+
+               })
+quei.addEventListener("click", function(){
+                if(quei.checked) {
+                 Queij = 15;
+                 updateCardModal();
+                 }else {
+                  Queij = 0;
+                 updateCardModal();
+                 }
+})
+oni.addEventListener("click", function(){
+             if(oni.checked) {
+                onio = 3;
+                 updateCardModal();
+                }else{
+                 onio = 0;
+                 updateCardModal();
+                 }
+})  
+ov.addEventListener("click", function(){
+    if(ov.checked){
+        ovo = 2;
+        updateCardModal();
+    }else{
+        ovo = 0;
+        updateCardModal();
+    } 
+})   
+
+            }else{
+                adicioFle.style.display="none";
+                chee.checked = false;
+                cebol.checked = false;
+                quei.checked = false;
+                oni.checked = false;
+                ov.checked = false;
+                Cheeda = 0;
+                cebola = 0;
+                Queij = 0;
+                onio = 0;
+                ovo = 0;
+                updateCardModal()
+            }
+
+        })
+
 
 // modal 2
 
@@ -318,6 +398,7 @@ final.addEventListener("click", function(){
        
         cart=[];
         checkbox.checked = false;
+        adicio.checked = false;
         obs.value = null;
         nome.value = null;
         rua.value = null;
@@ -326,6 +407,11 @@ final.addEventListener("click", function(){
         complement.value = null;
         teleen.style.display="none";
         modal4.style.display="none";
+        Cheeda = 0;
+        cebola = 0;
+        Queij = 0;
+        onio = 0;
+        ovo = 0;
         updateCardModal()
     
     });
@@ -336,9 +422,7 @@ final.addEventListener("click", function(){
 function checkRestauranteOn(){
     const data = new Date();
     const hora = data.getHours();
-    const dia = data.getDay();
-    console.log(data.getDay());
-    return dia != 1 && hora >= 18 && hora < 23,59; //restaurante aberto
+    return (hora >= 11 && hora <= 13 | hora >= 17 && hora <= 24,59); //restaurante aberto
     
 }
 
