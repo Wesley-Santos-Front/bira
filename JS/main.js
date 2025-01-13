@@ -41,6 +41,7 @@ const ov = document.getElementById("ov");
 
 let cart = [];
 let teleE = 0;
+teleE.toFixed(2);
 let Cheeda = 0;
 let cebola = 0;
 let Queij = 0;
@@ -131,6 +132,7 @@ function updateCardModal(){
 
     })
     quantCarr.innerHTML ="(" +  cart.length + ")";
+    var Tot=total.toFixed(2);
     Total.textContent=total1.toFixed(2);
     Total2.textContent=total1.toFixed(2);
 
@@ -199,6 +201,7 @@ function removeItemCa(name1){
 checkbox.addEventListener("click", function(){
     if (checkbox.checked){
         teleE = 9;
+        teleE.toFixed(2);
         updateCardModal();
         Toastify({
             text: "Será adicionado R$ 9,00 com a tele",
@@ -249,6 +252,7 @@ complement.addEventListener("input", function(event3){
     }
 })} else {
     teleE = 0;
+    teleE.toFixed(2);
     obs.value = "";
     rua.value = "";
     numero.value = "";
@@ -375,27 +379,27 @@ final.addEventListener("click", function(){
         if(adicio.checked){
             adic = "";
             if(chee.checked){
-                adic += "Cheedar  ";
+                adic += "Cheedar  R$ 5,00   ";
             }else{
                 adic += "";
             }
             if(cebol.checked){
-                adic += "Cebola  ";
+                adic += "Cebola  R$ 7,00  ";
             }else {
                 adic += "";
             }
             if(quei.checked){
-                adic += "Queijo Mussarela  ";
+                adic += "Queijo Mussarela  R$ 15,00,  ";
             }else{
                 adic += "";
             }
             if(oni.checked){
-                adic += "Onion  ";
+                adic += "Onion  R$ 3,00  ";
             }else {
                 adic += "";
             }
             if(ov.checked){
-                adic += "Ovo  ";
+                adic += "Ovo  R$ 2,00  ";
             }else{
                 adic += "";
             }
@@ -432,9 +436,9 @@ final.addEventListener("click", function(){
         const fone = "5198968933"
     
         if (checkbox.checked){
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }else{
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR1c}   Total: R$ ${Total.textContent} ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }
     
        
@@ -449,6 +453,12 @@ final.addEventListener("click", function(){
         complement.value = null;
         teleen.style.display="none";
         modal4.style.display="none";
+        adicioFle.style.display="none";
+        chee.checked = false;
+        cebol.checked = false;
+        quei.checked = false;
+        oni.checked = false;
+        ov.checked = false;
         Cheeda = 0;
         cebola = 0;
         Queij = 0;
