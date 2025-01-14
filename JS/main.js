@@ -379,7 +379,7 @@ final.addEventListener("click", function(){
         if(adicio.checked){
             adic = "";
             if(chee.checked){
-                adic += "Cheedar  R$ 5,00   ";
+                adic += "Cheddar  R$ 5,00   ";
             }else{
                 adic += "";
             }
