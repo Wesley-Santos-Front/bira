@@ -459,6 +459,7 @@ final.addEventListener("click", function(){
         quei.checked = false;
         oni.checked = false;
         ov.checked = false;
+        teleE = 0;
         Cheeda = 0;
         cebola = 0;
         Queij = 0;
