@@ -274,7 +274,7 @@ proximo.addEventListener("click", function(){
 
     if(!isOpen){
         Toastify({
-            text: "Ops o restaurante está fechado",
+            text: "Ops a lancheria está fechada!",
             duration: 2300,
             gravity: "top", // `top` or `bottom`
             position: "right", // `left`, `center` or `right`
