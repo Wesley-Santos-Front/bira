@@ -200,11 +200,11 @@ function removeItemCa(name1){
 //Função para pegar o input
 checkbox.addEventListener("click", function(){
     if (checkbox.checked){
-        teleE = 9;
+        teleE = 8;
         teleE.toFixed(2);
         updateCardModal();
         Toastify({
-            text: "Será adicionado R$ 9,00 com a tele",
+            text: "Será adicionado R$ 8,00 com a tele",
             duration: 2600,
             gravity: "top", // `top` or `bottom`
             position: "center", // `left`, `center` or `right`
@@ -433,7 +433,7 @@ final.addEventListener("click", function(){
         const message = encodeURIComponent(cardItem);
         const endeR1c= encodeURIComponent(endeR1);
         const endeR2c = encodeURIComponent(endeR2);
-        const fone = "5198968933"
+        const fone = "5199724284";
     
         if (checkbox.checked){
             window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
@@ -474,7 +474,7 @@ final.addEventListener("click", function(){
 function checkRestauranteOn(){
     const data = new Date();
     const hora = data.getHours();
-    return (hora >= 11 && hora <= 13 | hora >= 17 && hora <= 24,59); //restaurante aberto
+    return (hora >= 11 && hora <= 13 | hora >= 17 && hora <= 24); //restaurante aberto
     
 }
 
