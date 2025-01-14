@@ -379,27 +379,27 @@ final.addEventListener("click", function(){
         if(adicio.checked){
             adic = "";
             if(chee.checked){
-                adic += "Cheddar  R$ 5,00   ";
+                adic += "Cheddar R$ 5,00 ";
             }else{
                 adic += "";
             }
             if(cebol.checked){
-                adic += "Cebola  R$ 7,00  ";
+                adic += "Cebola R$ 7,00 ";
             }else {
                 adic += "";
             }
             if(quei.checked){
-                adic += "Queijo Mussarela  R$ 15,00,  ";
+                adic += "Queijo Mussarela R$ 15,00 ";
             }else{
                 adic += "";
             }
             if(oni.checked){
-                adic += "Onion  R$ 3,00  ";
+                adic += "Onion R$ 3,00 ";
             }else {
                 adic += "";
             }
             if(ov.checked){
-                adic += "Ovo  R$ 2,00  ";
+                adic += "Ovo R$ 2,00 ";
             }else{
                 adic += "";
             }
@@ -419,7 +419,7 @@ final.addEventListener("click", function(){
            
             const endeR1 = cart.map((item) => {
                 return (
-     `                                                                                                                                                                                                                                                            `
+     `                                                                                                                                                       `
                 )
         
             }).join("");
@@ -436,9 +436,9 @@ final.addEventListener("click", function(){
         const fone = "5199724284";
     
         if (checkbox.checked){
-            window.open(`https://wa.me/<${fone}>?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }else{
-            window.open(`https://wa.me/<${fone}>?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }
     
        
