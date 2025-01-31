@@ -11,7 +11,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -21,13 +21,14 @@
         width: 100%;
         height: 80px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -11px;
         text-align: center;
         position: relative;
         height: 100px;
@@ -38,8 +39,8 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 120px;
+        height: 106px;
+        width: 116px;
         transition: all 0.3s ease-in
     
     }
@@ -59,7 +60,7 @@
         font-family: "Ga Maamli", serif;
         text-decoration: none;
         color: white;
-        font-size: 15px;
+        font-size: 13px;
     
     }
     ion-icon{
@@ -71,7 +72,7 @@
     }
     .hiperlinks a:hover {
         border-bottom: 3px solid rgba(0, 0, 138, 0.65);
-        font-size: 22px;
+        font-size: 15px;
         transition: all 0.2s ease-in;
     
     }
@@ -116,7 +117,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -126,13 +127,14 @@
         width: 100%;
         height: 80px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         text-align: center;
         position: relative;
         height: 100px;
@@ -143,8 +145,8 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 160px;
+        height: 106px;
+        width: 146px;
         transition: all 0.3s ease-in
     
     }
@@ -176,7 +178,7 @@
     }
     .hiperlinks a:hover {
         border-bottom: 3px solid rgba(0, 0, 138, 0.65);
-        font-size: 22px;
+        font-size: 18px;
         transition: all 0.2s ease-in;
     
     }
@@ -217,7 +219,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -227,13 +229,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         text-align: center;
         position: relative;
         height: 130px;
@@ -322,7 +325,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -332,13 +335,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -422,7 +426,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -432,13 +436,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -522,7 +527,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -532,13 +537,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -623,7 +629,7 @@
         display: inline-block;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-image: linear-gradient(to right,rgb(214, 212, 212),  rgb(0, 58, 247));
     }
     .escopo1 {
         margin: 0 auto;
@@ -633,14 +639,16 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: rgba(10, 66, 250, 0.445);
         box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
+        margin-top: -9px;
         height: 130px;
         width: 180px;
         float: left;

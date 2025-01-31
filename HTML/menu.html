@@ -15,7 +15,7 @@
     <link rel="icon" href="../images/logo2.png" type="image/png">
     <title>Menu</title>
 </head>
-<body>
+<body style="background-color: rgb(235, 235, 235);">
     <div class="container">
         <section class="tela1">
              <!--Modal 1-->
@@ -42,9 +42,6 @@
               <div class="modal2" id="card-modal4">
                 <div class="carri">
                     <h2>Meu carrinho</h2>
-                    <div class="are">
-                    <textarea cols="33" rows="3" id="observacao" placeholder="exemplo: sem cebola..."></textarea> 
-                </div>
                     <div class="tele">
                         <p>Tele-Entrega:</p>
                         <input type="checkbox" id="check"/>
@@ -59,32 +56,6 @@
                     <input type="text" placeholder="Bairro" id="adress2">
                     <input type="text" placeholder="Complemento..." id="compl">
                 </div>
-                    </div>
-                    <div class="tele">
-                        <p>Adicionais:</p>
-                        <input type="checkbox" id="check1"/>
-                    </div>
-                    <div class="adicio" id="adicio-flex">
-                        <div class="flex-adi">
-                            <input type="checkbox" value="Cheedar" id="cheed">
-                            <p>Cheddar R$ 5,00</p>
-                        </div>
-                        <div class="flex-adi">
-                            <input type="checkbox" value="Cebola" id="ceb">
-                            <p>Cebola R$ 7,00</p>
-                        </div>
-                        <div class="flex-adi">
-                            <input type="checkbox" value="Queijo Mussarela" id="quei">
-                            <p>Queijo muss. R$ 15,00</p>
-                        </div>
-                        <div class="flex-adi">
-                            <input type="checkbox" value="Onions" id="oni">
-                            <p>Onions R$ 3,00</p>
-                        </div>
-                        <div class="flex-adi">
-                            <input type="checkbox" value="Ovo" id="ov">
-                            <p>Ovo R$ 2,00</p>
-                        </div>
                     </div>
                     <div class="pag">
                         <p>Forma de Pagamento:</p>
@@ -114,6 +85,48 @@
                 </div>
              </div>
 
+           <!--Modal 3-->
+           <div class="modal2" id="card-modal5">
+            <div class="carri">
+                <h2>Meu carrinho</h2>
+                <div class="are">
+                <textarea cols="33" rows="3" id="observacao" placeholder="exemplo: sem cebola..."></textarea> 
+            </div>
+                <div class="tele">
+                    <p>Adicionais:</p>
+                    <input type="checkbox" id="check1"/>
+                </div>
+                <div class="adicio" id="adicio-flex">
+                    <div class="flex-adi">
+                        <input type="checkbox" value="Cheedar" id="cheed">
+                        <p>Cheddar R$ 5,00</p>
+                    </div>
+                    <div class="flex-adi">
+                        <input type="checkbox" value="Cebola" id="ceb">
+                        <p>Cebola R$ 7,00</p>
+                    </div>
+                    <div class="flex-adi">
+                        <input type="checkbox" value="Queijo Mussarela" id="quei">
+                        <p>Queijo muss. R$ 15,00</p>
+                    </div>
+                    <div class="flex-adi">
+                        <input type="checkbox" value="Onions" id="oni">
+                        <p>Onions R$ 3,00</p>
+                    </div>
+                    <div class="flex-adi">
+                        <input type="checkbox" value="Ovo" id="ov">
+                        <p>Ovo R$ 2,00</p>
+                    </div>
+                </div>
+            <div class="botton1">
+                <div class="bot">
+                <button id="fech1" >fechar</button>
+                <button id="finalizar1">adicionar pedido</button>
+                </div>
+            </div>
+            </div>
+         </div>
+
              <div class="button-pedido" id="modaliza" >
                 <button><span id="quantCarrinho">(0)</span> Itens no carrinho </ion-icon></button>
             </div>
@@ -121,7 +134,7 @@
 
                 <div class="img-logo">
                     <a href="../index.html">
-                    <img src="../images/logo1-removebg-preview.png" alt="Logo André o Bira" title="Logo André o Bira">
+                    <img src="../images/logo_atua-removebg-preview (1).png" alt="Logo André o Bira" title="Logo André o Bira">
                     </a>
                 </div>
                 <nav class="hiperlinks">
@@ -134,15 +147,49 @@
                     <span>Seg á Dom - 11:00 ás 13:00 | 17:00 ás 00:00</span>
                 </div>
                 <nav class="menu-escopo">
+                    <div>
                     <a href="#">Xis</a>
+                </div>
+                    <div class="separ">
+                    <p>/</p>
+                </div>
+                <div>
                     <a href="#dog">Cachorro-Quente</a>
+                </div>
+                    <div class="separ">
+                        <p>/</p>
+                    </div>
+                    <div>
                     <a href="#torre">Torre de Batata</a>
+                </div>
+                    <div class="separ">
+                        <p>/</p>
+                    </div>
+                    <div>
                     <a href="#hamburguer">Hamburguer</a>
+                </div>
+                    <div class="separ">
+                        <p>/</p>
+                    </div>
+                    <div>
                     <a href="#torradas">Torradas</a>
+                </div>
+                    <div class="separ">
+                        <p>/</p>
+                    </div>
+                    <div>
                     <a href="#bebidas">Bebidas</a>
+                </div>
+                    <div class="separ">
+                        <p>/</p>
+                    </div>
+                    <div>
                     <a href="#outros">Outros</a>
+                </div>
                 </nav>
-                <div class="lista" id="lista">
+                <div class="lista">
+                    <section id="lista">
+                   
 
                     <!--XIS-->
                     <div class="title">
@@ -604,7 +651,7 @@
                 </div>
             </div>
             <div class="list-row">
-                <div class="title-list1" data-aos="fade-left" onclick="modal()" data-name="Torrada c/Ovo" data-price="15.00">
+                <div class="title-list1" data-aos="fade-left" onclick="modal()" data-name="Torrada Completa" data-price="15.00">
                     <h3>Torrada c/Ovo</h3>
                     <div>
                     <p>Pão de xis, queijo,</p>
@@ -618,8 +665,8 @@
             </div>
 
 </div>
-
-
+</section>       
+<section id="lista12">
  <!--Bebidas-->
  <div class="title" style="margin-top: 60px;" data-aos="fade-right" id="bebidas">
     <h2>BEBIDAS</h2>
@@ -627,7 +674,7 @@
 <!--L1-->
 <div class="list1">
     <div class="list-row">
-        <div class="title-list1" data-aos="fade-up" onclick="modal()" data-name="Pepsi 2 litros" data-price="15.00">
+        <div class="title-list1"  data-aos="fade-up" data-name="Pepsi 2 litros" data-price="15.00">
             <h3>Pepsi 2 litros</h3>
             <h3>R$ 15,00</h3>
         </div>
@@ -673,7 +720,7 @@
     </div>
 
     <div class="list-row">
-        <div class="title-list1" data-aos="fade-up" onclick="modal()" data-name="H2O" data-price="10.00">
+        <div class="title-list1 bob1" data-aos="fade-up" onclick="modal()" data-name="H2O" data-price="10.00">
             <h3>H2O</h3>
             <h3>R$ 10,00</h3>
         </div>
@@ -683,7 +730,7 @@
     </div>
 
     <div class="list-row">
-        <div class="title-list1" data-aos="fade-left" onclick="modal()" data-name="Cerveja (Latão)" data-price="10.00">
+        <div class="title-list1 bob1" data-aos="fade-left" onclick="modal()" data-name="Cerveja (Latão)" data-price="10.00">
             <h3>Cerveja (Latão)</h3>
             <h3>R$ 10,00</h3>
         </div>
@@ -691,8 +738,8 @@
             <img src="../images/cerveja-latao.jpeg" alt="cerveja">
         </div>
     </div>
-
 </div>
+
   <!--Outros-->
   <div class="title" style="margin-top: 60px;" data-aos="fade-right" id="outros">
     <h2>OUTROS</h2>
@@ -717,6 +764,8 @@
             <img src="../images/fritas-m.jpeg" alt="fritas">
         </div>
     </div>
+</section>
+    <section id="lista3">
     <div class="list-row">
         <div class="title-list1" data-aos="fade-left" onclick="modal()" data-name="Cama de Batata" data-price="150.00">
             <h3>Cama de Batata</h3>
@@ -730,7 +779,8 @@
             <img src="../images/cama-batata.jpg" alt="cama Batata">
         </div>
     </div>
-</div>
+    
+</section>
             </main>
             <footer class="foos">
             </footer>

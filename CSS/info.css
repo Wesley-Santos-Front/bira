@@ -19,6 +19,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -32,13 +33,14 @@
         flex-direction: row;
         flex-wrap: wrap; 
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -11px;
         position: relative;
         height: 100px;
         width: 110px;
@@ -48,14 +50,14 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 120px;
+        height: 106px;
+        width: 116px;
         transition: all 0.3s ease-in
     
     }
     .hiperlinks {
         width: 160px;
-        height: 80px;
+        height: 90px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -81,10 +83,11 @@
     }
     .hiperlinks a:hover {
         border-bottom: 3px solid rgba(0, 0, 138, 0.65);
-        font-size: 14px;
+        font-size: 15px;
         transition: all 0.2s ease-in;
     }
     .info{
+        background-color: transparent;
         display: block;
         margin: 10px auto;
         width: 100%;
@@ -92,6 +95,7 @@
         height: table;
     }
     .endereco{
+        background-color: transparent;
         margin: 30px auto;
         display: block;
         width: 100%;
@@ -119,10 +123,11 @@
 
     .para li{
         display: block;
+        margin-left: 12px;
         width: 100%;
         height: table;
         text-align: justify;
-        background-color: white;
+        background-color: transparent;
         font-family:'Times New Roman', Times, serif;
         padding: 7px;
         font-weight: 500;
@@ -168,6 +173,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -181,13 +187,14 @@
         flex-direction: row;
         flex-wrap: wrap; 
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -11px;
         position: relative;
         height: 100px;
         width: 140px;
@@ -197,14 +204,14 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 150px;
+        height: 106px;
+        width: 146px;
         transition: all 0.3s ease-in
     
     }
     .hiperlinks {
         width: 180px;
-        height: 80px;
+        height: 90px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -224,7 +231,7 @@
     ion-icon{
         padding: 0 8px 0 0;
         position: relative;
-        font-size: 22px;
+        font-size: 18px;
         float: left;
     
     }
@@ -271,7 +278,7 @@
         width: 100%;
         height: table;
         text-align: justify;
-        background-color: white;
+        background-color: transparent;
         font-family:'Times New Roman', Times, serif;
         padding: 7px;
         font-weight: 500;
@@ -318,6 +325,7 @@
         display: block;
     }
     .tela1 {
+        
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -331,13 +339,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -417,7 +426,7 @@
         width: 250px;
         height: table;
         text-align: justify;
-        background-color: white;
+        background-color: transparent;
         font-size: 15px;
         font-family:'Times New Roman', Times, serif;
         padding: 7px;
@@ -468,6 +477,7 @@
     display: block;
 }
 .tela1 {
+   
     display: inline-block;
     width: 100%;
     height: 100vh;
@@ -480,14 +490,14 @@
     flex-wrap: wrap; 
     width: 100%;
     height: 110px;
-    justify-content: space-between;
-    background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+    background-color: rgba(10, 66, 250, 0.692);
     box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
 }
 .img-logo{
     display: table;
 }
 .img-logo img{
+    margin-top: -9px;
     position: relative;
     height: 130px;
     width: 180px;
@@ -565,7 +575,7 @@ ion-icon{
     width: 250px;
     height: table;
     text-align: justify;
-    background-color: white;
+    background-color: transparent;
     font-family:'Times New Roman', Times, serif;
     padding: 7px;
     font-weight: 500;

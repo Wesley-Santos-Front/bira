@@ -19,6 +19,7 @@
         display: block;
     }
     .tela1 {
+      
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -237,13 +238,14 @@
         width: 100%;
         height: 80px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -11px;
         position: relative;
         height: 100px;
         width: 110px;
@@ -253,14 +255,14 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 120px;
+        height: 106px;
+        width: 116px;
         transition: all 0.3s ease-in
     
     }
     .hiperlinks {
         width: 160px;
-        height: 80px;
+        height: 90px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -286,7 +288,7 @@
     }
     .hiperlinks a:hover {
         border-bottom: 3px solid rgba(0, 0, 138, 0.65);
-        font-size: 14px;
+        font-size: 15px;
         transition: all 0.2s ease-in;
     
     }
@@ -426,9 +428,9 @@
     }
     .menu-escopo {
         text-align: center;
-        margin: 10px auto;
+        margin: 15px auto;
         width: 320px;
-        height: 40px;
+        height: 30px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -446,6 +448,12 @@
         color: rgba(0, 0, 138, 0.65);
         
     }
+    .separ p {
+        margin-top: 5px;
+        display: flex;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 10px;
+    }
     .lista {
         display: block;
         width: 320px;
@@ -453,7 +461,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
         font-size: 16px;
@@ -472,7 +479,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -552,6 +559,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -732,13 +740,14 @@
         width: 100%;
         height: 80px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -11px;
         position: relative;
         height: 100px;
         width: 140px;
@@ -748,14 +757,14 @@
     
     }
     .img-logo img:hover {
-        height: 110px;
-        width: 150px;
+        height: 106px;
+        width: 146px;
         transition: all 0.3s ease-in
     
     }
     .hiperlinks {
         width: 180px;
-        height: 80px;
+        height: 90px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -781,7 +790,7 @@
     }
     .hiperlinks a:hover {
         border-bottom: 3px solid rgba(0, 0, 138, 0.65);
-        font-size: 22px;
+        font-size: 18px;
         transition: all 0.2s ease-in;
     
     }
@@ -863,9 +872,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 15px auto;
         width: 380px;
-        height: 40px;
+        height: 30px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -882,6 +891,12 @@
     .menu-escopo a:hover {
         color: rgba(0, 0, 138, 0.65);
         
+    }
+    .separ p {
+        margin-top: 5px;
+        display: flex;
+        color: rgba(121, 121, 121, 0.75);
+        font-size: 11px;
     }
     .lista {
         display: block;
@@ -907,7 +922,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -986,6 +1001,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -1155,13 +1171,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -1286,9 +1303,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 470px;
-        height: 80px;
+        height: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1306,6 +1323,9 @@
         color: rgba(0, 0, 138, 0.65);
         
     }
+    .separ p {
+        display: none;
+    }
     .lista {
         display: block;
         width: 470px;
@@ -1313,7 +1333,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
         font-size: 20px;
@@ -1332,7 +1351,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color:rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -1412,6 +1431,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -1570,13 +1590,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -1700,9 +1721,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 700px;
-        height: 80px;
+        height: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1727,7 +1748,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
         font-size: 25px;
@@ -1746,7 +1766,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -1825,6 +1845,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -1983,13 +2004,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -2113,9 +2135,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 940px;
-        height: 80px;
+        height: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -2140,7 +2162,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
     }
@@ -2158,7 +2179,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -2235,6 +2256,7 @@
         display: block;
     }
     .tela1 {
+        
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -2393,13 +2415,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -2523,9 +2546,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 1100px;
-        height: 80px;
+        height: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -2550,7 +2573,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
     }
@@ -2568,7 +2590,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;
@@ -2645,6 +2667,7 @@
         display: block;
     }
     .tela1 {
+       
         display: inline-block;
         width: 100%;
         height: 100vh;
@@ -2803,13 +2826,14 @@
         width: 100%;
         height: 110px;
         justify-content: space-between;
-        background-image: linear-gradient(to right,white,  rgb(0, 58, 247));
+        background-color: rgba(10, 66, 250, 0.692);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
     }
     .img-logo{
         display: table;
     }
     .img-logo img{
+        margin-top: -9px;
         position: relative;
         height: 130px;
         width: 180px;
@@ -2933,9 +2957,9 @@
         font-weight: bold;
     }
     .menu-escopo {
-        margin: 10px auto;
+        margin: 25px auto;
         width: 1200px;
-        height: 80px;
+        height: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -2960,7 +2984,6 @@
         margin: 0 auto;
     }
     .title h2 {
-        margin-top: 10px;
         display: inline-block;
         font-family: "Ga Maamli", serif;
     }
@@ -2981,7 +3004,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border-radius: 10px;
-        background-image: linear-gradient(to right,white,  rgb(179, 179, 179));
+        background-color: rgb(179, 179, 179);
         box-shadow: 10px 5px 5px rgba(112, 112, 112,0.65);
         cursor: pointer;
         transition: all 0.3s ease-out;

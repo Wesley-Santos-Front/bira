@@ -2,11 +2,14 @@
 const modal1 = document.getElementById("card-modal");
 const modal3 = document.getElementById("card-modal3");
 const modal4 = document.getElementById("card-modal4");
+const modal5 = document.getElementById("card-modal5");
 const itens = document.getElementById("card-itens");
 const Total = document.getElementById("card-total");
 const Total2 = document.getElementById("card-total2");
 const fecha = document.getElementById("fech");
+const fecha1 = document.getElementById("fech1");
 const proximo = document.getElementById("finaliz");
+const finalizar1 = document.getElementById("finalizar1");
 const volt = document.getElementById("voltare");
 const final = document.getElementById("finaliza");
 const rua = document.getElementById("adress");
@@ -16,6 +19,7 @@ const erro = document.getElementById("erro-en");
 const erro2 = document.getElementById("erro-en2");
 const card =  document.getElementById("card-menu");
 const menu = document.getElementById("lista");
+const menu2= document.getElementById("lista12");
 const nomePedidor = document.getElementById("item-name");
 const quant = document.getElementById("item-quant");
 const val = document.getElementById("item-valor");
@@ -36,7 +40,8 @@ const cebol = document.getElementById("ceb");
 const quei = document.getElementById("quei");
 const oni = document.getElementById("oni");
 const ov = document.getElementById("ov");
-
+const menu3 = document.getElementById("lista3");
+const valAd = document.getElementById("valAd");
 
 
 let cart = [];
@@ -47,62 +52,213 @@ let cebola = 0;
 let Queij = 0;
 let onio = 0;
 let ovo = 0;
+let adici = "";
+let captura;
+let captura1;
+let obser = "";
 
 
 /*acionar o modal sim ou não*/
  
+adicio.addEventListener("click", function(){
+    if (adicio.checked){
+        adicioFle.style.display="flex";}
+        else{
+            adicioFle.style.display="none";
+            adici = "";
+            updateCardModal()
+        }});
+chee.addEventListener("click", function(){
+        if (chee.checked){
+            Cheeda += 5;
+            adici += "Cheddar, ";
+            updateCardModal();
+           }
+        if(chee.checked == false){
+           Cheeda = 0;
+            adici = "";
+            
+            updateCardModal();
+           }
+       })
+cebol.addEventListener("click", function(){
+        if(cebol.checked){
+            cebola += 7;
+            adici += "Cebola, ";
+            updateCardModal();
+        }
 
-  menu.addEventListener("click", function(event){
-      let captura = event.target.closest(".title-list1")
-      
-      
-      if(captura){
-              
-          const name = captura.getAttribute("data-name")
-          const price = parseFloat(captura.getAttribute("data-price"))
-  
-          addToCard(name, price)
-          
-          Toastify({
-            text: name + " adicionado ao carrinho!",
-            duration: 2500,
-            gravity: "top", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
-            style: {
-              background: "rgba(28, 187, 7, 0.95)",
-            },
-          }).showToast();
-           
-      
-      }
+        if(cebol.checked == false){
+           cebola = 0;
+            adici = "";
+            updateCardModal();
+        }
+
+       })
+quei.addEventListener("click", function(){
+        if(quei.checked) {
+         Queij += 15;
+         adici += "Queijo Mussarela, ";
+         updateCardModal();
+         }
+         if(quei.checked == false){
+          Queij = 0;
+          adici = "";
+         updateCardModal();
+         }
+})
+oni.addEventListener("click", function(){
+     if(oni.checked) {
+        onio += 3;
+        adici += "Onion, ";
+        
+         updateCardModal();
+        } 
+    if(oni.checked == false){
+        onio = 0;
+        adici = "";
+        
+         updateCardModal();
+         }
+})  
+    ov.addEventListener("click", function(){
+    if(ov.checked){
+    ovo += 2;
+    adici += "Ovo, ";
+updateCardModal();
+    }
+if(ov.checked == false){
+ovo = 0;
+adici = "";
+
+updateCardModal();
+} 
+})   
+
+
+ menu.addEventListener("click", function (event){
+      modal5.style.display="block";
+      captura = event.target.closest(".title-list1")
+       
+ })
+ menu3.addEventListener("click", function(event){
+    modal5.style.display="block";
+      captura = event.target.closest(".title-list1");
+ })
+ finalizar1.addEventListener("click", function(){
+    if(captura){
+            
+        const name = captura.getAttribute("data-name")
+        const price = parseFloat(captura.getAttribute("data-price"))
+
+        addToCard(name, price)
+        
+        Toastify({
+          text: name + " adicionado ao carrinho!",
+          duration: 2500,
+          gravity: "top", // `top` or `bottom`
+          position: "center", // `left`, `center` or `right`
+          style: {
+            background: "rgba(28, 187, 7, 0.95)",
+          },
+        }).showToast();}
+        modal5.style.display="none";
+        captura = null;
+        adicioFle.style.display="none";
+        adicio.checked = false;
+        chee.checked = false;
+        cebol.checked = false;
+        quei.checked = false;
+        oni.checked = false;
+        ov.checked = false;
+        obs.value = "";
+        obser = "";
+        adici = "";
+        updateCardModal()
+
     
-  })
+})
+ menu2.addEventListener("click", function(event){
+     captura = event.target.closest(".title-list1")
+      
+      
+    if(captura){
+            
+        const name = captura.getAttribute("data-name")
+        const price = parseFloat(captura.getAttribute("data-price"))
+
+        addToCard(name, price)
+        
+        Toastify({
+          text: name + " adicionado ao carrinho!",
+          duration: 2500,
+          gravity: "top", // `top` or `bottom`
+          position: "center", // `left`, `center` or `right`
+          style: {
+            background: "rgba(28, 187, 7, 0.95)",
+          },
+        }).showToast();
+         
+        captura = null;
+        adicioFle.style.display="none";
+        adicio.checked = false;
+        chee.checked = false;
+        cebol.checked = false;
+        quei.checked = false;
+        oni.checked = false;
+        ov.checked = false;
+        obs.value = "";
+        obser = "";
+        adici = "";
+        updateCardModal()
+    
+    }
+
+})
+
+fecha1.addEventListener("click", function(){
+    modal5.style.display="none";
+})
 
 
 /*Função para adicionar ao carrinho*/
 function addToCard(name, price){
-
-    const exist = cart.find(item => item.name === name)
-    if(exist){
-        // se o item ja existe apenas some 1
-        exist.quantity += 1;
-    }else{
+    var totAd = Cheeda + cebola + Queij + onio + ovo;
     cart.push({
         name,
         price,
-        quantity: 1,
+        totAd,
+        adici,
+        obser,
     
     })
+    adicioFle.style.display="none";
+    adicio.checked = false;
+    chee.checked = false;
+    cebol.checked = false;
+    quei.checked = false;
+    oni.checked = false;
+    ov.checked = false;
+    Cheeda = 0;
+    cebola = 0;
+    Queij = 0;
+    onio = 0;
+    ovo = 0;
+    obs.value = "";
+    obser = "";
+    adici = "";
+    updateCardModal();
 }
-updateCardModal()
 
-}
+
+
     
 /*Função atualizar carrinho*/
 function updateCardModal(){
     nomePedidor.innerHTML="";
     var total = 0;
     var total1 = 0;
+    var igi = 0;
     
     cart.forEach(item =>{
         const createDiv = document.createElement("div");
@@ -113,8 +269,8 @@ function updateCardModal(){
         <div class="container-flex">
          <div class="container-block"> 
          <p>${item.name}</p>
-         <p>Qtd: ${item.quantity}</p>
          <p>R$ ${item.price.toFixed(2)}</p>
+         <p id:"ad">Adic: ${item.adici}</p>
          </div> 
 
          <div>
@@ -125,8 +281,9 @@ function updateCardModal(){
          </div>
         </div>
         `
-        total += item.price * item.quantity;
-        total1 = total + teleE + Cheeda + cebola + Queij + onio + ovo;
+        igi += item.totAd
+        total += item.price;
+        total1 = total + teleE + igi;
         nomePedidor.appendChild(createDiv);
        
 
@@ -135,7 +292,6 @@ function updateCardModal(){
     var Tot=total.toFixed(2);
     Total.textContent=total1.toFixed(2);
     Total2.textContent=total1.toFixed(2);
-
 
 }
 
@@ -149,7 +305,6 @@ butModaliza.addEventListener("click", function(){
 
 fecha.addEventListener("click", function(){
          modal3.style.display="none"
-         checkbox.checked = false;
          adicio.checked = false;
          teleen.style.display="none";
          adicioFle.style.display="none";
@@ -158,17 +313,6 @@ fecha.addEventListener("click", function(){
          numero.value = "";
          bairro.value = "";
          complement.value = "";
-         chee.checked = false;
-         cebol.checked = false;
-         quei.checked = false;
-         oni.checked = false;
-         ov.checked = false;
-         Cheeda = 0;
-         cebola = 0;
-         Queij = 0;
-         onio = 0;
-         ovo = 0;
-         teleE = 0;
          updateCardModal()
 
 })
@@ -182,6 +326,8 @@ nomePedidor.addEventListener("click", function(event){
         removeItemCa(name1)
     }
 })
+
+
 
 function removeItemCa(name1){
     const index = cart.findIndex(item => item.name === name1);
@@ -263,6 +409,7 @@ complement.addEventListener("input", function(event3){
 }
 });
 
+
 // Avançar pedido
 proximo.addEventListener("click", function(){
     if(nome.value === "") {
@@ -289,74 +436,7 @@ proximo.addEventListener("click", function(){
      modal3.style.display="none";
         modal4.style.display="block"
 
-        // adicionais
-        adicio.addEventListener("click", function(){
-            if (adicio.checked){
-                adicioFle.style.display="flex";
-chee.addEventListener("click", function(){
-                if (chee.checked){
-                    Cheeda = 5;
-                    updateCardModal();
-                   }else{
-                    Cheeda = 0;
-                    updateCardModal();
-                   }
-               })
-cebol.addEventListener("click", function(){
-                if(cebol.checked){
-                    cebola = 7;
-                    updateCardModal();
-                }else{
-                    cebola = 0;
-                    updateCardModal();
-                }
-
-               })
-quei.addEventListener("click", function(){
-                if(quei.checked) {
-                 Queij = 15;
-                 updateCardModal();
-                 }else {
-                  Queij = 0;
-                 updateCardModal();
-                 }
-})
-oni.addEventListener("click", function(){
-             if(oni.checked) {
-                onio = 3;
-                 updateCardModal();
-                }else{
-                 onio = 0;
-                 updateCardModal();
-                 }
-})  
-ov.addEventListener("click", function(){
-    if(ov.checked){
-        ovo = 2;
-        updateCardModal();
-    }else{
-        ovo = 0;
-        updateCardModal();
-    } 
-})   
-
-            }else{
-                adicioFle.style.display="none";
-                chee.checked = false;
-                cebol.checked = false;
-                quei.checked = false;
-                oni.checked = false;
-                ov.checked = false;
-                Cheeda = 0;
-                cebola = 0;
-                Queij = 0;
-                onio = 0;
-                ovo = 0;
-                updateCardModal()
-            }
-
-        })
-
+       
 
 // modal 2
 
@@ -374,45 +454,14 @@ final.addEventListener("click", function(){
     } else {
     
     }
-    var adic = "";
-        //if para adicionais
-        if(adicio.checked){
-            adic = "";
-            if(chee.checked){
-                adic += "Cheddar R$ 5,00 ";
-            }else{
-                adic += "";
-            }
-            if(cebol.checked){
-                adic += "Cebola R$ 7,00 ";
-            }else {
-                adic += "";
-            }
-            if(quei.checked){
-                adic += "Queijo Mussarela R$ 15,00 ";
-            }else{
-                adic += "";
-            }
-            if(oni.checked){
-                adic += "Onion R$ 3,00 ";
-            }else {
-                adic += "";
-            }
-            if(ov.checked){
-                adic += "Ovo R$ 2,00 ";
-            }else{
-                adic += "";
-            }
-        }else{
-
-        }
     
         //Enviar pedido para o Whatsapp
         const cardItem = cart.map((item) => {
             return (
                 `
 - ${item.name} R$ ${item.price.toFixed(2)}
-    ${item.quantity} unidade(s)`
+    *Adicionais: ${item.adici}*
+    *Obser: ${item.obser}*`
             )
     
         }).join("");
@@ -436,9 +485,9 @@ final.addEventListener("click", function(){
         const fone = "5199724284";
     
         if (checkbox.checked){
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value}  ${endeR2c}*Observação* ${endeR1c}   ${obs.value}${endeR2c}*Adicional* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Endereço*${endeR1c}   ${rua.value} ${endeR1c}   Nº: ${numero.value} ${endeR1c}   Bairro: ${bairro.value} ${endeR1c}   Complemento: ${complement.value} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }else{
-            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Observação*${endeR1c}   ${obs.value} ${endeR2c}*Adicionais* ${endeR1c}    ${adic} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
+            window.open(`https://wa.me/${fone}?text=*Nome:* ${nome.value} ${endeR2c}*Pedido* ${endeR1c} ${message} ${endeR2c}*Maionese* ${endeR1c}   ${maionese.value} ${endeR2c}*Forma de Pagamento* ${endeR1c}   ${pag.value} ${endeR2c}Tele: R$ ${teleE}.00 ${endeR1c}    *Total: R$ ${Total.textContent}* ${endeR2c}     Por favor, envie-nos está mensagem agora. assim que recebermos estaremos atendendo você.`);
         }
     
        
@@ -465,12 +514,12 @@ final.addEventListener("click", function(){
         Queij = 0;
         onio = 0;
         ovo = 0;
+        obser = "";
         updateCardModal()
     
     });
 
 })
-
 //verificar hora
 function checkRestauranteOn(){
     const data = new Date();
