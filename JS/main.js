@@ -137,8 +137,8 @@ updateCardModal();
 
 
  menu.addEventListener("click", function (event){
-      modal5.style.display="block";
       captura = event.target.closest(".title-list1")
+      modal5.style.display="block";
        
  })
  menu3.addEventListener("click", function(event){
@@ -147,7 +147,6 @@ updateCardModal();
  })
  finalizar1.addEventListener("click", function(){
     if(captura){
-            
         const name = captura.getAttribute("data-name")
         const price = parseFloat(captura.getAttribute("data-price"))
 
@@ -207,6 +206,11 @@ updateCardModal();
         quei.checked = false;
         oni.checked = false;
         ov.checked = false;
+        Cheeda = 0;
+        cebola = 0;
+        Queij = 0;
+        onio = 0;
+        ovo = 0;
         obs.value = "";
         obser = "";
         adici = "";
@@ -218,6 +222,21 @@ updateCardModal();
 
 fecha1.addEventListener("click", function(){
     modal5.style.display="none";
+    adicio.checked = false;
+    chee.checked = false;
+    cebol.checked = false;
+    quei.checked = false;
+    oni.checked = false;
+    ov.checked = false;
+    Cheeda = 0;
+    cebola = 0;
+    Queij = 0;
+    onio = 0;
+    ovo = 0;
+    obs.value = "";
+    obser = "";
+    adici = "";
+    updateCardModal();
 })
 
 
